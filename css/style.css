@@ -17,3 +17,157 @@ h3 {
 	color: #32425c;
 	font-weight: normal;
 }
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.container {
+	width: 940px;
+	margin: 0 auto;
+	padding: 0 10px;
+}
+.blue {
+	background: #293449;
+}
+.header-top {
+	min-height: 42px;
+}
+.logo {
+	display: block;
+	height: 42px;
+	width: 220px;
+	float: left;
+	
+	background: #ee3643;
+	border-bottom: 5px solid #b52933;
+}
+.search-field {
+	width: 270px;
+	height: 42px;
+	
+	float: left;
+
+	background: white;
+}
+.number-plate {
+	width: 450px;
+	height: 42px;
+	float: right;
+	
+	background: yellow;
+}
+.number-plate ul {
+	font-size: 0;
+
+	list-style: none;
+}
+.number-plate li {
+	display: inline-block;
+
+	font-size: 13px;
+}
+.grey {
+	background: #f1f5f7;
+}
+.header-middle {
+	min-height: 72px;
+	padding-top: 46px;
+	margin-bottom: 40px;
+}
+.header-colomn {
+	width: 300px;
+	margin-right: 20px;
+	float: left;
+	min-height: 72px;
+
+	background: pink;
+}
+.header-colomn.user-block {
+	margin-right: 0;
+}
+.main-navigation {
+	height: 60px;
+	margin-bottom: 60px;
+
+	background: #32425c;
+}
+.main-navigation ul {
+	list-style: none;
+}
+.main-navigation li {
+	display: inline-block;
+}
+.info-panel {
+	min-height: 409px;
+	margin-top: 59px;
+	margin-bottom: 55px;
+	
+	font-size: 0;
+
+	background: pink;
+}
+.info-block {
+	width: 300px;
+	height: 123px;
+	display: inline-block;
+	margin-bottom: 20px;
+	margin-left: 20px;
+
+	font-size: 13px;
+
+	background: #f6b22d;
+}
+.info-block:first-child {
+	margin-left: 0;
+}
+.info-block:last-child {
+	margin-bottom: 0;
+}
+.slider {
+	width: 620px;
+	height: 266px;
+	float: left;
+
+	font-size: 13px;
+
+	background: #d3c2b1;
+}
+.popular-items {
+	font-size: 0;
+
+	background: pink;
+}
+.content-title {
+	margin-bottom: 20px;
+	/* разобраться с заголовками */
+
+	font-size: 13px;
+
+	background: #f7f3ec;
+}
+.content-title a {
+	float: right;
+	width: 220px;
+	height: 38px;
+
+	background: red;
+}
+.item-card {
+	height: 318px;
+	width: 220px;
+	display: inline-block;
+	margin-right: 20px;
+	margin-bottom: 21px;
+
+	font-size: 13px;
+
+	background: yellow;
+
+	vertical-align: top;
+}
+.item-card:last-child {
+	margin-right: 0;
+}
+
+
