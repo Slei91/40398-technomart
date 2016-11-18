@@ -139,16 +139,25 @@ h3 {
 	background: pink;
 }
 .content-title {
+	position: relative;
+
 	margin-bottom: 20px;
-	/* разобраться с заголовками */
+	padding-top: 29px;
+	padding-bottom: 27px;
 
 	font-size: 13px;
 
 	background: #f7f3ec;
 }
+.content-title h2 {
+	margin: 0;
+}
 .content-title a {
-	float: right;
-	width: 220px;
+	position: absolute;
+	top: 25px;
+	right: 24px;
+
+	width: 253px;
 	height: 38px;
 
 	background: red;
@@ -167,6 +176,30 @@ h3 {
 	vertical-align: top;
 }
 .item-card:last-child {
+	margin-right: 0;
+}
+.manufacturers {
+	min-height: 440px;
+
+	font-size: 0;
+
+	background: pink;
+}
+.brand {
+	display: inline-block;
+	width: 218px;
+	height: 143px;
+	margin-right: 20px;
+	margin-bottom: 20px;
+
+	font-size: 13px;
+
+	background: yellow;
+	border: 1px solid #e5e5e5;
+
+	vertical-align: top;
+}
+.brand:nth-child(4n+1) {
 	margin-right: 0;
 }
 
