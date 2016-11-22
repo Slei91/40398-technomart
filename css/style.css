@@ -223,4 +223,18 @@ h3 {
 	min-height: 334px;
 	float: left; 
 }
-
+.technomart-info {
+	margin-top: 75px;
+	margin-bottom: 87px;
+}
+.technomart-info_left {
+	width: 620px;
+	margin-right: 20px;
+	min-height: 380px;
+	float: left;
+}
+.technomart-info_right {
+	width: 300px;
+	min-height: 380px;
+	float: right;
+}
