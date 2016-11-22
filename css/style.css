@@ -202,5 +202,25 @@ h3 {
 .brand:nth-child(4n+1) {
 	margin-right: 0;
 }
-
+.service-grey {
+	background: #f2f6f8;
+}
+.service {
+	min-height: 522px;
+}
+.service-title {
+	padding-top: 62px;
+	padding-bottom: 25px;
+	min-height: 102px;
+}
+.service-nav {
+	min-height: 230px;
+	width: 240px;
+	float: left;
+}
+.service-slider {
+	width: 700px;
+	min-height: 334px;
+	float: left; 
+}
 
