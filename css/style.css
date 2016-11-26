@@ -238,3 +238,51 @@ h3 {
 	min-height: 380px;
 	float: right;
 }
+.main-footer_top {
+	background: #32425c;
+}
+.footer-logo {
+	float: left;
+	width: 220px;
+	height: 63px;
+
+	background: #ee3643;
+	border-bottom: 5px solid #b52933;
+}
+.footer_first-nav {
+	float: right;
+	font-size: 0;
+
+	list-style: none;
+}
+.footer_first-nav li {
+	display: inline-block;
+
+	font-size: 13px;
+}
+
+.main-footer_bottom {
+	background: #293449;
+}
+.footer-contacts {
+	float: left;
+}
+.footer_second-nav {
+	float: right;
+	font-size: 0;
+
+	list-style: none;
+}
+.footer_second-nav li {
+	display: inline-block;
+
+	font-size: 13px;
+}
+.fcont {
+	width: 300px;
+	float: left;
+	margin-right: 20px;
+}
+.fcont:last-child {
+	margin-right: 0;
+}
