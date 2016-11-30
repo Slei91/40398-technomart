@@ -1,0 +1,215 @@
+/*
+Icon classes can be used entirely standalone. They are named after their original file names.
+
+```html
+<!-- `display: block` sprite -->
+<div class="icon-home"></div>
+
+<!-- `display: inline-block` sprite -->
+<img class="icon-home" />
+```
+*/
+.icon-icon_basket {
+  background-image: url(sprite.png);
+  background-position: -85px -96px;
+  width: 17px;
+  height: 16px;
+}
+.icon-icon_basket_click {
+  background-image: url(sprite.png);
+  background-position: -68px -96px;
+  width: 17px;
+  height: 16px;
+}
+.icon-icon_basket_hover {
+  background-image: url(sprite.png);
+  background-position: -51px -96px;
+  width: 17px;
+  height: 16px;
+}
+.icon-icon_bookmark {
+  background-image: url(sprite.png);
+  background-position: -123px -32px;
+  width: 14px;
+  height: 16px;
+}
+.icon-icon_bookmark_click {
+  background-image: url(sprite.png);
+  background-position: -123px -16px;
+  width: 14px;
+  height: 16px;
+}
+.icon-icon_bookmark_hover {
+  background-image: url(sprite.png);
+  background-position: -123px 0px;
+  width: 14px;
+  height: 16px;
+}
+.icon-icon_button {
+  background-image: url(sprite.png);
+  background-position: 0px 0px;
+  width: 25px;
+  height: 25px;
+}
+.icon-icon_button_block {
+  background-image: url(sprite.png);
+  background-position: -25px 0px;
+  width: 25px;
+  height: 25px;
+}
+.icon-icon_button_dot {
+  background-image: url(sprite.png);
+  background-position: 0px -25px;
+  width: 25px;
+  height: 25px;
+}
+.icon-icon_button_dot_block {
+  background-image: url(sprite.png);
+  background-position: -25px -25px;
+  width: 25px;
+  height: 25px;
+}
+.icon-icon_button_dot_hover {
+  background-image: url(sprite.png);
+  background-position: -50px 0px;
+  width: 25px;
+  height: 25px;
+}
+.icon-icon_button_hover {
+  background-image: url(sprite.png);
+  background-position: -50px -25px;
+  width: 25px;
+  height: 25px;
+}
+.icon-icon_check {
+  background-image: url(sprite.png);
+  background-position: -75px -46px;
+  width: 23px;
+  height: 23px;
+}
+.icon-icon_check_block {
+  background-image: url(sprite.png);
+  background-position: 0px -73px;
+  width: 23px;
+  height: 23px;
+}
+.icon-icon_check_hover {
+  background-image: url(sprite.png);
+  background-position: -75px -23px;
+  width: 23px;
+  height: 23px;
+}
+.icon-icon_check_on {
+  background-image: url(sprite.png);
+  background-position: -75px 0px;
+  width: 27px;
+  height: 23px;
+}
+.icon-icon_check_on_block {
+  background-image: url(sprite.png);
+  background-position: -27px -50px;
+  width: 27px;
+  height: 23px;
+}
+.icon-icon_check_on_hover {
+  background-image: url(sprite.png);
+  background-position: 0px -50px;
+  width: 27px;
+  height: 23px;
+}
+.icon-icon_home {
+  background-image: url(sprite.png);
+  background-position: 0px -113px;
+  width: 15px;
+  height: 12px;
+}
+.icon-icon_login {
+  background-image: url(sprite.png);
+  background-position: -102px -34px;
+  width: 20px;
+  height: 17px;
+}
+.icon-icon_login_click {
+  background-image: url(sprite.png);
+  background-position: -102px -51px;
+  width: 20px;
+  height: 17px;
+}
+.icon-icon_login_hover {
+  background-image: url(sprite.png);
+  background-position: -102px -17px;
+  width: 20px;
+  height: 17px;
+}
+.icon-icon_logout {
+  background-image: url(sprite.png);
+  background-position: -63px -73px;
+  width: 21px;
+  height: 17px;
+}
+.icon-icon_logout_hover {
+  background-image: url(sprite.png);
+  background-position: -102px 0px;
+  width: 21px;
+  height: 17px;
+}
+.icon-icon_phone {
+  background-image: url(sprite.png);
+  background-position: -54px -50px;
+  width: 19px;
+  height: 19px;
+}
+.icon-icon_search {
+  background-image: url(sprite.png);
+  background-position: 0px -96px;
+  width: 17px;
+  height: 17px;
+}
+.icon-icon_search_active {
+  background-image: url(sprite.png);
+  background-position: -17px -96px;
+  width: 17px;
+  height: 17px;
+}
+.icon-icon_search_click {
+  background-image: url(sprite.png);
+  background-position: -34px -96px;
+  width: 17px;
+  height: 17px;
+}
+.icon-icon_search_hover {
+  background-image: url(sprite.png);
+  background-position: -84px -73px;
+  width: 17px;
+  height: 17px;
+}
+.icon-icon_user {
+  background-image: url(sprite.png);
+  background-position: -43px -73px;
+  width: 20px;
+  height: 18px;
+}
+.icon-icon_user_hover {
+  background-image: url(sprite.png);
+  background-position: -23px -73px;
+  width: 20px;
+  height: 18px;
+}
+.icon-social_fb {
+  background-image: url(sprite.png);
+  background-position: -123px -48px;
+  width: 10px;
+  height: 18px;
+}
+.icon-social_inst {
+  background-image: url(sprite.png);
+  background-position: -102px -68px;
+  width: 17px;
+  height: 17px;
+}
+.icon-social_vk {
+  background-image: url(sprite.png);
+  background-position: -102px -96px;
+  width: 20px;
+  height: 12px;
+}

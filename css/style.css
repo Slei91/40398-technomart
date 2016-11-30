@@ -42,22 +42,50 @@ h3 {
 	background: #ee3643;
 	border-bottom: 5px solid #b52933;
 }
+.logo img {
+	padding-left: 55px;
+	padding-top: 12px;
+}
 .search-field {
+	position: relative;
+
 	width: 270px;
 	height: 42px;
-	
 	float: left;
+}
+.search-icon {
+	position: absolute;
+	left: 17px;
+	top: 12px;
 
-	background: white;
+	width: 17px;
+	height: 17px;
+
+	background:url(../img/sprite.png) no-repeat 0 -96px;
+
+	cursor: pointer;
+}
+.search-field input {
+	width: 220px;
+	padding-left: 50px;
+	padding-top: 11px;
+	padding-bottom: 11px;
+
+	font-size: 17px;
+	color: white;
+
+	background: #293449;
+	border: none;
+	outline: none;
 }
 .number-plate {
 	width: 450px;
-	height: 42px;
 	float: right;
-	
-	background: yellow;
 }
 .number-plate ul {
+	margin: 0;
+	padding: 0;
+
 	font-size: 0;
 
 	list-style: none;
@@ -65,7 +93,47 @@ h3 {
 .number-plate li {
 	display: inline-block;
 
-	font-size: 13px;
+	font-size: 17px;
+	line-height: 17px;
+}
+.number-plate a {
+	position: relative;
+
+	display: block;
+
+	width: 150px;
+	padding-top: 12px;
+	height: 30px;
+
+	color: #ffffff;
+
+	text-decoration: none;
+	text-align: center;
+}
+a.npi {
+	width: 110px;
+	padding-left: 40px;
+}
+.npi:before {
+	position: absolute;
+	left: 18px;
+
+	content: "";
+}
+.npi-mark:before {
+	height: 16px;
+	width: 14px;
+
+	background: url(../img/sprite.png) -123px -32px;
+}
+.npi-basket:before {
+	height: 17px;
+	width: 17px;
+
+	background: url(../img/sprite.png) -85px -96px;
+}
+.number-plate li:last-child a {
+	background: #63a63e;
 }
 .grey {
 	background: #f1f5f7;
