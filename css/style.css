@@ -42,9 +42,17 @@ h3 {
 	background: #ee3643;
 	border-bottom: 5px solid #b52933;
 }
+.logo:hover {
+	background: #ca2c37;
+	border-bottom: 5px solid #9a212a;
+}
+.logo:active {
+	background: #ba2732;
+	border-bottom: 5px solid #8e1e26;
+}
 .logo img {
 	padding-left: 55px;
-	padding-top: 12px;
+	padding-top: 13px;
 }
 .search-field {
 	position: relative;
@@ -53,7 +61,7 @@ h3 {
 	height: 42px;
 	float: left;
 }
-.search-icon {
+.search-field label:before {
 	position: absolute;
 	left: 17px;
 	top: 12px;
@@ -61,9 +69,15 @@ h3 {
 	width: 17px;
 	height: 17px;
 
-	background:url(../img/sprite.png) no-repeat 0 -96px;
+	content: "";
 
-	cursor: pointer;
+	background:url(../img/sprite.png) no-repeat 0 -96px;
+}
+.search-field input:hover+label::before {
+	background:url(../img/sprite.png) no-repeat -84px -73px;
+}
+.search-field input:focus+label::before  {
+	background:url(../img/sprite.png) no-repeat -17px -96px;
 }
 .search-field input {
 	width: 220px;
@@ -77,6 +91,15 @@ h3 {
 	background: #293449;
 	border: none;
 	outline: none;
+}
+.search-field input:hover {
+	background: #212a3a;
+}
+.search-field input:focus {
+	background: #ffffff;
+}
+.search-field input:focus {
+	color:black;
 }
 .number-plate {
 	width: 450px;
@@ -110,13 +133,20 @@ h3 {
 	text-decoration: none;
 	text-align: center;
 }
+a.npi:hover {
+	background: #212a3a;
+}
+a.npi:active{
+	background: #161d29;
+	color: #8b8e94;
+}
 a.npi {
-	width: 110px;
-	padding-left: 40px;
+	width: 132px;
+	padding-left: 18px;
 }
 .npi:before {
 	position: absolute;
-	left: 18px;
+	left: 17px;
 
 	content: "";
 }
@@ -126,14 +156,33 @@ a.npi {
 
 	background: url(../img/sprite.png) -123px -32px;
 }
+.npi-mark:hover:before {
+	background-position: -123px 0px;
+}
+.npi-mark:active:before {
+	background-position: -123px -16px;
+}
 .npi-basket:before {
 	height: 17px;
 	width: 17px;
 
 	background: url(../img/sprite.png) -85px -96px;
 }
-.number-plate li:last-child a {
+.npi-basket:hover:before {
+	background-position: -51px -96px;
+}
+.npi-basket:active:before {
+	background-position: -68px -96px;
+}
+a.order {
 	background: #63a63e;
+}
+a.order:hover {
+	background: #5fbb2d;
+}
+a.order:active {
+	background: #518534;
+	color: #8b8e94;
 }
 .grey {
 	background: #f1f5f7;
@@ -141,18 +190,115 @@ a.npi {
 .header-middle {
 	min-height: 72px;
 	padding-top: 46px;
-	margin-bottom: 40px;
+	margin-bottom: 37px;
 }
 .header-colomn {
 	width: 300px;
 	margin-right: 20px;
 	float: left;
 	min-height: 72px;
+}
+.shop-description {
+	width: 248px;
+	padding-left: 52px;
+	padding-top: 3px;
 
-	background: pink;
+	font-size: 16px;
+	line-height: 23px;
+	font-style: italic;
+
+	color: #ee3643;
+}
+.phone-number {
+	width: 264px;
+	height: 39px;
+
+	border: 3px solid white;
+}
+.phone-number span {
+	position: relative;
+
+	display: block;
+	padding-left: 70px;
+	padding-top: 11px;
+
+	font-size: 21px;
+	line-height: 18px;
+	font-weight: bold;
+
+	color: #e9292a;
+}
+.phone-number span::before {
+	position: absolute;
+	left: 12px;
+	top: 10px;
+
+	display: block;
+	width: 19px;
+  	height: 19px;
+
+  	content: "";
+
+	background-image: url(../img/sprite.png);
+  	background-position: -54px -50px;
+}
+.contacts p {
+	margin: 0;
+	padding-top: 4px;
+	padding-left: 9px;
+
+	line-height: 24px;
+	font-size: 14px;
+
+	color: #32425c;
 }
 .header-colomn.user-block {
 	margin-right: 0;
+}
+.user-block a {
+	display: block;
+	float: right;
+	margin-left: 10px;
+
+	line-height: 18px;
+	font-size: 21px;
+
+	background: white;
+	color: black;
+
+	text-decoration: none;
+}
+.user-block a:hover {
+	color: #ee3643;
+}
+.user-block a:active{
+	color: #b2b2b2;
+}
+.user-block a.registr {
+	padding: 13px 24px 14px 24px;
+}
+.user-block a.login {
+	position: relative;
+
+	padding: 13px 26px 14px 47px;
+}
+.user-block a.login:before {
+	position: absolute;
+	left: 14px;
+	top: 14px;
+
+	width: 20px;
+  	height: 17px;
+
+  	background: url(../img/sprite.png) -102px -34px;
+
+	content: "";
+}
+.user-block a.login:hover:before {
+	background: url(../img/sprite.png) -102px -17px;
+}
+.user-block a.login:active:before {
+	background: url(../img/sprite.png) -102px -51px;
 }
 .main-navigation {
 	height: 60px;
