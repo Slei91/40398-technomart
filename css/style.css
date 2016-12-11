@@ -327,10 +327,10 @@ a.order:active {
 
 	text-decoration: none;
 }
-.main-navigation a.first:first-child {
+.main-navigation li:first-child a {
 	padding-left: 56px;
 }
-.main-navigation a.last:last-child {
+.main-navigation li:last-child a {
 	padding-right: 56px;
 }
 .main-navigation a:hover {
@@ -360,6 +360,57 @@ a.order:active {
 	font-size: 13px;
 
 	background: #f6b22d;
+}
+.info-block b {
+	display: block;
+	padding-top: 21px;
+	padding-left: 22px;
+	padding-bottom: 12px;
+
+	font-size: 24px;
+	line-height: 30px;
+	font-weight: bold;
+
+	color: white;
+}
+.info-block a {
+	display: block;
+	width: 135px;
+	padding-top: 11px;
+	padding-bottom: 9px;
+	margin-left: 25px;
+
+	font-size: 14px;
+	line-height: 18px;
+
+	color: white;
+	background-color: rgba(0, 0, 0, 0.1);
+	border-radius: 3px;
+
+	text-transform: uppercase;
+	text-align: center;
+	text-decoration: none;
+}
+.info-block a:hover {
+	background-color: rgba(0, 0, 0, 0.2);
+}
+.info-block a:active {
+	background-color: rgba(0, 0, 0, 0.3);
+}
+.materials {
+	background: #f6b22d url(../img/material.png) no-repeat 213px 31px;
+}
+.tool {
+	background: #4aafde url(../img/tool.png) no-repeat 197px 33px;
+}
+.equipment {
+	background: #cc79d1 url(../img/equipments.png) no-repeat 191px 31px;
+}
+.discounts {
+	background: #85d179 url(../img/discounts.png) no-repeat 196px 26px;
+}
+.delivery {
+	background: #f6b22d url(../img/delivery.png) no-repeat 191px 32px;
 }
 .info-block:first-child {
 	margin-left: 0;
