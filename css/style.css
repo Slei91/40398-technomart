@@ -301,16 +301,45 @@ a.order:active {
 	background: url(../img/sprite.png) -102px -51px;
 }
 .main-navigation {
-	height: 60px;
 	margin-bottom: 60px;
 
 	background: #32425c;
 }
 .main-navigation ul {
+	margin: 0;
+	padding: 0;
+
+	font-size: 0;
+
 	list-style: none;
 }
 .main-navigation li {
 	display: inline-block;
+
+	font-size: 17px;
+}
+.main-navigation a {
+	display: block;
+	padding: 17px 30px 14px 30px;
+
+	color: white;
+	border-bottom: 5px solid #293449;
+
+	text-decoration: none;
+}
+.main-navigation a.first:first-child {
+	padding-left: 56px;
+}
+.main-navigation a.last:last-child {
+	padding-right: 56px;
+}
+.main-navigation a:hover {
+	background: #293449;
+}
+.main-navigation a:active {
+	background: #1d2739;
+	color: #8e939c;
+	border-bottom: 5px solid #1d2739;
 }
 .info-panel {
 	min-height: 409px;
