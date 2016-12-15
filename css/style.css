@@ -347,10 +347,10 @@ a.order:active {
 	margin-bottom: 55px;
 	
 	font-size: 0;
-
-	background: pink;
 }
 .info-block {
+	position: relative;
+
 	width: 300px;
 	height: 123px;
 	display: inline-block;
@@ -360,6 +360,18 @@ a.order:active {
 	font-size: 13px;
 
 	background: #f6b22d;
+}
+.info-block.new:after {
+	position: absolute;
+	right: 0;
+	top: 0;
+
+	width: 60px;
+	height: 59px;
+
+	content: "";
+
+	background: url(../img/new-flag.png);
 }
 .info-block b {
 	display: block;
@@ -419,13 +431,123 @@ a.order:active {
 	margin-bottom: 0;
 }
 .slider {
+	position: relative;
+
 	width: 620px;
 	height: 266px;
 	float: left;
 
 	font-size: 13px;
+}
+.slide {
+	position: absolute;
+	top: 0;
+	left: 0;
 
-	background: #d3c2b1;
+	width: 100%;
+	height: 100%;
+
+	overflow: hidden;
+}
+.slide-title {
+	padding: 26px 0 0 24px;
+
+	font-size: 36px;
+	line-height: 30px;
+	font-weight: bold;
+	text-transform: uppercase;
+
+	color: white;
+}
+.slide-discription {
+	padding: 5px 0 0 24px;
+
+	font-family:'PT Sans' , 'Arial' sans-serif;
+	font-size: 18px;
+	line-height: 24px;
+
+	color: white;
+}
+.slide .btn {
+	display: inline-block;
+	padding: 11px 46px 9px 49px;
+	margin-top: 121px;
+	margin-left: 25px;
+
+	text-decoration: none;
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+
+	background: #ee3643;
+	color: white;
+	border-radius: 3px;
+}
+.prev,
+.next {
+	position: absolute;
+	top: -106px;
+
+	display: block;
+	width: 22px;
+	height: 40px;
+}
+.prev {
+	left: -215px;
+
+	background: url(../img/icon-left.png);
+}
+.next {
+	right: -220px;
+
+	background: url(../img/icon-right.png);
+}
+.slide:nth-child(1) {
+	background: url(../img/slider-img1.jpg);
+}
+.slide:nth-child(2) {
+	background: url(../img/slider-img2.jpg);
+}
+.slide {
+	display:none;
+}
+#btn-1:checked ~ .slides .slide:nth-child(1){
+	display: block;
+}
+#btn-2:checked ~ .slides .slide:nth-child(2){
+	display: block;
+}
+.slider .controls {
+	position: absolute;
+	left: 240px;
+	bottom: 36px;
+
+	width: 140px;
+	height: 10px;
+
+	text-align: center;
+	z-index: 1000;
+}
+.slider input[type="radio"] {
+	position: absolute;
+	display: none;
+}
+.controls label {
+	display: inline-block;
+	width: 6px;
+	height: 6px;
+	margin: 0 4px;
+
+	background: white;
+	border: 2px solid white;
+	border-radius: 50%;
+
+	vertical-align: top;
+	cursor: pointer;
+}
+#btn-1:checked ~ .controls label[for="btn-1"],
+#btn-2:checked ~ .controls label[for="btn-2"]{
+	background: #ee3643;
 }
 .popular-items {
 	font-size: 0;

@@ -97,7 +97,7 @@
 
 		<section class="info-panel">
 			
-			<div class="info-block materials">
+			<div class="info-block materials new">
 				<b>Материалы</b>
 				<a href="#">На любой вкус</a>
 			</div>
@@ -113,16 +113,28 @@
 			</div>
 
 			<div class="slider">
-				<div class="slide-title">
-					<b>Перфораторы</b>
-					<p>Настоящие мужские игрушки</p>
+				<input id="btn-1" type="radio" name="toggle" checked>
+				<input id="btn-2" type="radio" name="toggle">
+
+				<div class="controls">
+					<label for="btn-1"><div class="prev"></div></label>
+					<label for="btn-2"><div class="next"></div></label>
 				</div>
 
-				<div class="prev"></div>
+				<div class="slides">
+					<div class="slide">	
+						<div class="slide-title">Перфораторы</div>
+						<div class="slide-discription">Настоящие мужские игрушки</div>
+						<a class="btn" href="#">Открыть каталог</a>
+					</div>
 
-				<div class="next"></div>
+					<div class="slide">	
+						<div class="slide-title">Дрели</div>
+						<div class="slide-discription">Соседям на радость!</div>
+						<a class="btn" href="#">Открыть каталог</a>
+					</div>
+				</div>
 
-				<a href="#">Открыть каталог</a>
 			</div>
 
 			<div class="info-block discounts">
