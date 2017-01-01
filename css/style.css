@@ -245,8 +245,9 @@ a.order:active {
 .contacts p {
 	margin: 0;
 	padding-top: 4px;
-	padding-left: 9px;
-
+	width: 270px;
+	
+	text-align: center;
 	line-height: 24px;
 	font-size: 14px;
 
@@ -658,6 +659,10 @@ a.order:active {
 
 	z-index: 10;
 }
+.catalog-item:hover,
+.brands:hover {
+	box-shadow: 0px 10px 25px 0px rgba(41,52,73,0.5)
+}
 .catalog-item:hover .actions {
 	display: block;
 }
@@ -772,26 +777,42 @@ a.order:active {
 	border-left-color: #ee3643;
 }
 .manufacturers {
-	min-height: 440px;
-
 	font-size: 0;
 }
-.brand {
+.brands-wrap {
+	margin-bottom: 65px;
+}
+.brands {
 	display: inline-block;
 	width: 218px;
 	height: 143px;
 	margin-right: 20px;
 	margin-bottom: 20px;
+	line-height: 143px;
 
 	font-size: 13px;
 
-	background: yellow;
 	border: 1px solid #e5e5e5;
 
 	vertical-align: top;
 }
-.brand:nth-child(4n+1) {
+.brands:nth-child(4n) {
 	margin-right: 0;
+}
+
+.brands:active {
+	opacity: 0.3;
+	box-shadow: 0px 4px 10px 0px rgba(41,52,73,0.5)
+}
+.brands a {
+	display: block;
+	width: 100%;
+	height: 100%;
+
+	text-align: center;
+}
+.brands a img {
+	vertical-align: middle;
 }
 .service-grey {
 	background: #f2f6f8;
@@ -800,9 +821,18 @@ a.order:active {
 	min-height: 522px;
 }
 .service-title {
-	padding-top: 62px;
-	padding-bottom: 25px;
-	min-height: 102px;
+	padding-top: 43px;
+	background: yellow;
+}
+.service-title h2 {
+	font-size: 30px;
+	line-height: 24px;
+	text-transform: uppercase;
+}
+.service-title p {
+	font-size: 13px;
+	line-height: 24px;
+	
 }
 .service-nav {
 	min-height: 230px;
