@@ -822,27 +822,106 @@ a.order:active {
 }
 .service-title {
 	padding-top: 43px;
-	background: yellow;
+	margin-bottom: 69px;
 }
 .service-title h2 {
 	font-size: 30px;
 	line-height: 24px;
 	text-transform: uppercase;
+	margin-bottom: 29px;
 }
 .service-title p {
+	font-family:'PT Sans' , 'Arial' sans-serif;
 	font-size: 13px;
 	line-height: 24px;
-	
 }
 .service-nav {
 	min-height: 230px;
 	width: 240px;
 	float: left;
 }
+.service-nav ul {
+	position: relative;
+
+	margin: 0;
+	padding: 0;
+
+	list-style: none;
+}
+.service-nav ul:before {
+	position: absolute;
+	right: 0;
+	top: -45px;
+
+	width: 10px;
+	height: 272px;
+
+	content: "";
+
+	background: url(../img/shadow.png);
+}
+.service-nav a {
+	display: block;
+	padding: 12px 22px 17px;
+	width: 196px;
+
+	text-decoration: none;
+	line-height: 30px;
+	font-size: 21px;
+	font-weight: bold;
+
+	background: #32425c;
+	color: #fff;
+	border-bottom: 1px solid #293449;
+	border-top: 1px solid #405069;
+}
+.service-nav a:hover {
+	background: #293449;
+}
+.service-nav .active a,
+.service-nav a:active {
+	background: #fff;
+	color: #32425c;
+	border-color: #fff;
+}
 .service-slider {
-	width: 700px;
-	min-height: 334px;
-	float: left; 
+	margin-left: 80px;
+	width: 620px;
+	height: 285px;
+	float: right; 
+}
+.service-slider .title {
+	padding-top: 5px;
+	margin-bottom: 30px;
+
+	font-size: 36px;
+	line-height: 24px;
+	text-transform: uppercase;
+
+	color: #32425c;
+}
+.service-slide {
+	width: 100%;
+	height: 100%;
+	display: none;
+}
+.service-slider .description {
+	margin-bottom: 30px;
+
+	font-family:'PT Sans' , 'Arial' sans-serif;
+}
+.service-slide-one {
+	background: url(../img/slider2-img1.png) no-repeat 174px 24px;
+	display: block;
+}
+.service-slide-two {
+	background: url(../img/slider2-2.jpg) no-repeat 250px 3px;
+}
+.service-slide-tree {
+	background: url(../img/slider2-3.jpg) no-repeat 160px 0;
+}
+.service-slide .btn {
+	width: 195px;
 }
 .technomart-info {
 	margin-top: 75px;
