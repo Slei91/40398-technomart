@@ -42,10 +42,12 @@ h3 {
 	background: #ee3643;
 	border-bottom: 5px solid #b52933;
 }
+.footer-logo:hover,
 .logo:hover {
 	background: #ca2c37;
 	border-bottom: 5px solid #9a212a;
 }
+.footer-logo:active,
 .logo:active {
 	background: #ba2732;
 	border-bottom: 5px solid #8e1e26;
@@ -924,65 +926,235 @@ a.order:active {
 	width: 195px;
 }
 .technomart-info {
-	margin-top: 75px;
-	margin-bottom: 87px;
+	margin-bottom: 86px;
+}
+.technomart-info h2 {
+	margin-top: 78px;
+	margin-bottom: 20px;
+
+	text-transform: uppercase;
+
+	color: #000;
+}
+.technomart-info p {
+	margin-bottom: 20px;
+	margin-top: 25px;
+
+	font-family:'PT Sans' , 'Arial' sans-serif;
 }
 .technomart-info_left {
-	width: 620px;
-	margin-right: 20px;
-	min-height: 380px;
+	width: 540px;
 	float: left;
+}
+.delivery-list {
+	margin: 0;
+	padding: 0;
+	margin-bottom: 17px;
+
+	list-style: none;
+}
+.delivery-list li {
+	padding-bottom: 16px;
+}
+.delivery-list a {
+	position: relative;
+
+	padding-left: 36px;
+
+	text-decoration: none;
+	line-height: 20px;
+	font-size: 18px;
+	
+	color: #000;
+}
+.delivery-list a:before {
+	position: absolute;
+	left: 0;
+	bottom: 43%;
+
+	width: 23px;
+	height: 0;
+
+	content: "";
+
+	border: 1px solid #fb565a;
+}
+.technomart-info_left .btn {
+	width: 220px;
 }
 .technomart-info_right {
 	width: 300px;
 	min-height: 380px;
 	float: right;
 }
+.technomart-info_right .map {
+	margin-top: 32px;
+	margin-bottom: 32px;
+	display: block;
+}
+.technomart-info_right .btn {
+	width: 300px;
+}
 .main-footer_top {
 	background: #32425c;
+}
+.main-footer_top1 {
+	margin-bottom: 28px;
 }
 .footer-logo {
 	float: left;
 	width: 220px;
 	height: 63px;
 
+	line-height: 75px;
+	text-align: center;
+
+	vertical-align: middle;
+
 	background: #ee3643;
 	border-bottom: 5px solid #b52933;
 }
+.footer_second-nav,
 .footer_first-nav {
+	width: 550px;
 	float: right;
+	margin-top: 38px;
+
 	font-size: 0;
+	text-align: right;
 
 	list-style: none;
 }
+.footer_second-nav li,
 .footer_first-nav li {
 	display: inline-block;
-
-	font-size: 13px;
+	padding-left: 59px;
 }
+.footer_second-nav li:first-child,
+.footer_first-nav li:first-child {
+	padding-left: 0;
+}
+.footer_second-nav a,
+.footer_first-nav a {
+	text-decoration: none;
+	font-size: 18px;
+	line-height: 24px;
 
+	color: #f1f5f7;
+}
+.footer_second-nav a:hover,
+.footer_first-nav a:hover {
+	text-decoration: underline;
+}
+.footer_first-nav a:active {
+	color: rgba( 255,255,255,0.5);
+	text-decoration: none;
+}
+.main-footer_top2 {
+	padding-bottom: 49px;
+}
+.footer_second-nav a:active {
+	color: rgba(255,209,128,0.5);
+	text-decoration: none;
+}
 .main-footer_bottom {
 	background: #293449;
 }
 .footer-contacts {
 	float: left;
+	padding-left: 3px;
+	
+	line-height: 24px;
+	font-size: 18px;
+
+	color: #f1f5f7;
 }
 .footer_second-nav {
-	float: right;
-	font-size: 0;
-
-	list-style: none;
+	margin-top: 0;
 }
-.footer_second-nav li {
-	display: inline-block;
-
-	font-size: 13px;
+.footer_second-nav a {
+	color: #ffd180;
+}
+.main-footer_bottom {
+	padding-bottom: 26px;
 }
 .fcont {
 	width: 300px;
 	float: left;
 	margin-right: 20px;
+	margin-top: 37px;
 }
 .fcont:last-child {
 	margin-right: 0;
+}
+.footer-copyright {
+	line-height: 18px;
+	font-size: 16px;
+
+	color: #fff;
+}
+.footer-social {
+	width: 230px;
+
+	font-size: 0;
+	vertical-align: top;
+	padding-left: 70px;
+}
+.social {
+	display: inline-block;
+	width: 41px;
+	height: 41px;
+	margin-right: 5px;
+
+	text-decoration: none;
+
+	border-radius: 50%;
+	background-color: #212a3a;
+}
+.social:last-child {
+	margin-right: 0;
+}
+.social:hover {
+	background-color: #ee3643;
+}
+.social:active {
+	background-color: #ee3643;
+}
+.social-vk {
+	background: #212a3a url(../img/social-vk.png) no-repeat 50% 50%;
+}
+.social-fb {
+	background: #212a3a url(../img/social-fb.png) no-repeat 50% 50%;
+}
+.social-inst {
+	background: #212a3a url(../img/social-inst.png) no-repeat 50% 50%;
+}
+.footer-designed {
+	font-size: 0;
+	
+}
+.footer-designed div{
+	display: inline-block;
+	margin-right: 52px;
+
+	font-size: 16px;
+	line-height: 18px;
+
+	color: #fff;
+}
+.footer-designed div:last-child {
+	margin-right: 0;
+}
+.footer-designed a{
+	text-decoration: none;
+
+	color: #ffd180;
+}
+.footer-designed a:hover {
+	text-decoration: underline;
+}
+.footer-designed a:active {
+	text-decoration: none;
+
+	color: #ee3643;
 }
